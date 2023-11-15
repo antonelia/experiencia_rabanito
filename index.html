@@ -25,11 +25,14 @@
     <title>Experiencia Rabanito</title>
 </head>
 <body>
-    <div id="loader">
-        <div class="lds-heart"><div></div></div>
-    </div>
+   
     
-    <label class="switch-mode">
+    <!-- Old 
+         <div id="loader">
+        <div class="lds-heart"><div></div></div>
+        </div>
+
+        <label class="switch-mode">
         <input class='toggle-checkbox' type='checkbox' id="darkModeToggle"></input>
         <div class='toggle-slot'>
           <div class='sun-icon-wrapper'>
@@ -42,7 +45,8 @@
         </div>
     </label>
     
-    <!-- Seccion 1 presentación -->
+    Seccion 1 presentación 
+
     <section class="section" id="section1">
         <div class="d-flex">
             <div class="columna-titulo"><h2>¡Hola!<br><span>somos Rabanito</span></h2></div>
@@ -51,12 +55,13 @@
             </div>
         </div>
     </section>
-    <!-- Mensaje de alerta -->
+    
+    Mensaje de alerta 
+
     <div class="modal fade" id="cookies-section" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-md">
             <div class="modal-content">
                 <div class="modal-header justify-content-center">
-                    <!--<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
                     <lottie-player src="https://lottie.host/a9c38abd-1e57-485f-b931-81222e46a100/7v16ANZPwN.json" background="transparent"  speed="0.2"  style="width: 200px; height: 200px;" loop autoplay></lottie-player>
                 </div> 
                 <div class="modal-body text-center">
@@ -70,12 +75,14 @@
             </div>
         </div>
     </div>
-   <!-- Cookies Modal -->
+
+   Cookies Modal 
+
     <div class="modal fade" id="cookies-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> 
                 </div>
                 <div class="modal-body text-center">
                     <h3><b>¡Cookies aceptadas!</b></h3>
@@ -87,12 +94,12 @@
             </div>
         </div>
     </div>  
-    <!-- Gatitos Modal -->
+    Gatitos Modal 
     <div class="modal fade" id="gatitos-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                    
                 </div>
                 <div class="modal-body">
                     <h3><b>¿No te gustan las cookies? 🥺</b></h3>
@@ -104,8 +111,23 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
+    <!--Seccion 1 | Intro-->
+    <section class="section d-none" id="section1"></section>
 
+    <!--Seccion 2 | Boton a Manifiesto-->
+    <section class="section" id="section2">
+        <div class="row">
+            <div class="col-12 text-center section-items">
+                <p class="title-section">¿Dónde estamos? En un mundo en donde <strong>todo puede pasar. </strong> <br>
+                    Te llevaremos por una serie de instancias en donde vas a poder experimentar los diversos planos que nos conforman
+                </p>
+                <button class="cube-btn" onclick="iraManifiesto()">
+                    <img src="assets/img/cube-purple.png" alt="cubo-3d" width="70%">
+                </button>
+            </div>
+        </div>
+    </section>
     <!--JS-->
 
     <script src="lib/bootstrap-5.2.3/dist/js/bootstrap.bundle.js"></script>
@@ -113,15 +135,24 @@
     <script src="js/emoji-rain.js"></script>
     <script src="lib/wow/wow.min.js"></script>
 
-    <script>
+   <!--- <script>
         new WOW().init();
-    </script>
+    </script>-->
 
     <script src="https://code.iconify.design/1/1.0.4/iconify.min.js">   </script>
     
    
     <script src="js/custom.js"></script>
     
+    <script>
+        function iraManifiesto(){
+            $(".cube-btn").addClass("cube-click");
+
+            setTimeout(function() {
+            window.location.href = "/manifiesto.html";
+            }, 150);
+        }
+    </script>
     
 </body>
 </html>

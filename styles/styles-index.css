@@ -103,3 +103,43 @@ body{
 #loader{
     background: var(--pink-color);
 }
+
+
+/* New */
+
+#section2{
+    background: var(--light-blue-color);
+    height: 100vh;
+}
+
+.title-section{
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 200;
+}
+
+.title-section strong{
+    color: white;
+}
+
+.section-items{
+    width: 70%;
+    margin: auto;
+    margin-top: 30vh;
+}
+
+.cube-btn{
+    background: none;
+    border: none;
+    transform: rotate(10deg);
+}
+
+.cube-btn:hover{
+    transform: scale(1.2) rotate(20deg);
+    transition: .2s;
+}
+
+.cube-click{
+    transform: scale(10) rotate(45deg) !important;
+    transition: .1s;
+}
