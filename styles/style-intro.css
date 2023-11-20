@@ -86,3 +86,12 @@ svg {
     opacity: 1 !important;
   }
 
+  #dots path{
+    transform: scale(.5);
+  }
+
+
+  #h3-5{
+    transform: scale(.6);
+  }
+

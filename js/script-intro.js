@@ -75,10 +75,6 @@ gsap.registerPlugin(ScrollTrigger);
 
     //bg change
     sun.to("#sun", { attr: { offset: "0.15" } }, 0.00)
-    sun.to("#bg_grad stop:nth-child(2)", { attr: { offset: "0.15" } }, 0.00)
-    sun.to("#bg_grad stop:nth-child(3)", { attr: { offset: "0.18" } }, 0.00)
-    sun.to("#bg_grad stop:nth-child(4)", { attr: { offset: "0.25" } }, 0.00)
-    sun.to("#bg_grad stop:nth-child(5)", { attr: { offset: "0.46" } }, 0.00)
     sun.to("#bg_grad stop:nth-child(6)", { attr: { "stop-color": "#ffffff" } }, 0)
 
 
@@ -93,7 +89,7 @@ gsap.registerPlugin(ScrollTrigger);
         scrub: 4,
     });
 
-    scene2.fromTo("#h2-1", { y: 500, opacity: 0 }, { y: 0, opacity: 1 }, 0)
+    scene2.fromTo("#h2-1", { y: 0, opacity: 0 }, { y: -200, opacity: 1 }, 0)
     scene2.fromTo("#h2-2", { y: 500 }, { y: 0 }, 0.1)
     scene2.fromTo("#h2-3", { y: 700 }, { y: 0 }, 0.1)
     scene2.fromTo("#h2-4", { y: 700 }, { y: 0 }, 0.2)
@@ -104,8 +100,8 @@ gsap.registerPlugin(ScrollTrigger);
 
     /* Bats */
     gsap.fromTo("#bats", { opacity: 1, y: 400, scale: 0 }, {
-        y: 120,
-        scale: 0.8,
+        y: 200,
+        scale: 1.2,
         transformOrigin: "50% 50%",
         ease: "power3.out",
         scrollTrigger: {
@@ -115,11 +111,18 @@ gsap.registerPlugin(ScrollTrigger);
             scrub: 3,
             onEnter: function() {
                 gsap.utils.toArray("#bats path").forEach((item, i) => {
-                    gsap.to(item, { scaleX: 0.5, yoyo: true, repeat: 11, duration: 0.15, delay: 0.7 + (i / 10), transformOrigin: "50% 50%" })
+                    gsap.to(item, { scale: 1.5, duration: 0.15, delay: 0.7 + (i / 10) })
                 });
                 gsap.set("#bats", { opacity: 1 })
+                gsap.set("#bats", { x: 200, y: 500}, 0)
+                gsap.set("#bats path:nth-child(1)", { x: 250,}, 0)
+                gsap.set("#bats path:nth-child(2)", { x: -300,}, 0)
+                gsap.set("#bats path:nth-child(3)", { x: -200,}, 0)
+                gsap.set("#bats path:nth-child(4)", { x: 450, y: 100}, 0)
+                gsap.set("#bats path:nth-child(5)", { x: 450, y: 200}, 0)
+                gsap.set("#bats path:nth-child(7)", { x: 450, y: 200}, 0)
             },
-            onLeave: function() { gsap.to("#bats", { opacity: 0, delay: 2 }) },
+            onLeave: function() { gsap.to("#bats", { opacity: 0 }) },
         }
     })
 
@@ -130,35 +133,27 @@ gsap.registerPlugin(ScrollTrigger);
         animation: sun2,
         trigger: ".scrollElement",
         start: "2200 top",
-        end: "6000 100%",
+        end: "3000 100%",
         scrub: 1,
     });
 
     sun2.to("#sun", { attr: { offset: "0.6" } }, 0)
-    sun2.to("#bg_grad stop:nth-child(2)", { attr: { offset: "0.7" } }, 0)
-    sun2.to("#sun", { attr: { "stop-color": "#6DC2C4" } }, 0)
-    sun2.to("#lg4 stop:nth-child(1)", { attr: { "stop-color": "#623951" } }, 0)
-    sun2.to("#lg4 stop:nth-child(2)", { attr: { "stop-color": "#261F36" } }, 0)
-    sun2.to("#bg_grad stop:nth-child(6)", { attr: { "stop-color": "#ffffff" } }, 0)
-    sun2.to("#bg_grad stop:nth-child(2)", { attr: { "stop-color": "#8ACED0" } }, 0)
-    sun2.to("#bg_grad stop:nth-child(3)", { attr: { "stop-color": "#A7DADC" } }, 0)
-    sun2.to("#bg_grad stop:nth-child(4)", { attr: { "stop-color": "#C5E7E7" } }, 0)
-    sun2.to("#bg_grad stop:nth-child(5)", { attr: { "stop-color": "#E2F3F3" } }, 0)
-
+    sun2.to("#bg_grad stop:nth-child(2)", { attr: { offset: "0" } }, 0)
+    sun2.to("#sun", { attr: { "stop-color": "#e43c5a", opacity: 1} }, 0)
 
 
     /* Transition (from Scene2 to Scene3) */
-    gsap.set("#scene3", { y: 580, visibility: "visible" })
+    gsap.set("#scene3", { y: 650, visibility: "visible" })
     let sceneTransition = gsap.timeline();
     ScrollTrigger.create({
         animation: sceneTransition,
         trigger: ".scrollElement",
-        start: "70% top",
+        start: "60% top",
         end: "bottom 100%",
         scrub: 3,
     });
 
-    sceneTransition.to("#h2-1", { y: -680, scale: 1.5, transformOrigin: "50% 50%" }, 0)
+    //sceneTransition.to("#h2-1", { y: 500, scale: 1.5, transformOrigin: "50% 50%" }, 0)
     sceneTransition.to("#bg_grad", { attr: { cy: "-80" } }, 0.00)
     sceneTransition.to("#bg2", { y: 0 }, 0)
 
@@ -179,10 +174,10 @@ gsap.registerPlugin(ScrollTrigger);
     scene3.fromTo("#h3-2", { y: 800 }, { y: -550 }, 0.03)
     scene3.fromTo("#h3-3", { y: 600 }, { y: -550 }, 0.06)
     scene3.fromTo("#h3-4", { y: 800 }, { y: -550 }, 0.09)
-    scene3.fromTo("#h3-5", { y: 1000 }, { y: -550 }, 0.12)
+    scene3.fromTo("#h3-5", { y: 1000, x: 350 }, { y: -310, x: 510 }, 0.12)
 
     //stars
-    scene3.fromTo("#stars", { opacity: 0 }, { opacity: 0.5, y: -500 }, 0)
+    scene3.fromTo("#dots", { opacity: 0 }, { opacity: 1, y: -570, x: 20}, 0)
 
     // Scroll Back text
     scene3.fromTo("#arrow2", { opacity: 0 }, { opacity: 0.7, y: -710 }, 0.25)
