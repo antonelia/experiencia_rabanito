@@ -103,3 +103,72 @@ body{
 #loader{
     background: var(--pink-color);
 }
+
+#intro{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(22, 22, 22);
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    
+}
+#intro section{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: transparent;
+    display: flex;
+}
+#intro section h1{
+    color: white;
+}
+
+.inicio-animacion{
+    top: 100vh !important;
+}
+
+.empezar-animacion{
+    animation-name: slideinup;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+.white-circle{
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 101;
+    left: calc(50vw - 25px);
+    animation: pulse-animation 2s infinite;
+    bottom: 50px;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+.white-circle:hover{
+    transform: scale(1.5);
+}
+
+@keyframes slideinup {
+    from {
+      top:100vh;
+      opacity: 0;
+    }
+  
+    to {
+      top: 0;
+      opacity: 1;
+    }
+}
+
+@keyframes pulse-animation {
+    0% {
+      box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.2);
+    }
+    100% {
+      box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+    }
+  }

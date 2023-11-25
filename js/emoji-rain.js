@@ -15,19 +15,6 @@ $( document ).ready(function() {
   
 });
 
-$(window).on('load', function(){
-  setTimeout(function() {
-      $('#loader').fadeOut();
-  }, 2000);
-
-  setTimeout(function() {
-    $('#cookies-section').modal('show');
-  }, 4000);
-  
-});
-
-
-
 function generateEmojiRain(emojis) {
   // Código que genera la lluvia de emojis
   $("#cookies-section").modal('toggle');
