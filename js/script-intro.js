@@ -1,4 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
+
     let speed = 100;
 
     /*  SCENE 1 */
@@ -203,25 +204,12 @@ gsap.registerPlugin(ScrollTrigger);
         }
     })
 
+    /*btn manifiesto*/
+
+    scene3.to("#btn", { opacity: 1 })
 
     //reset scrollbar position after refresh
     window.onbeforeunload = function() {
         window.scrollTo(0, 0);
     }
 
-
-let fullscreen;
-let fsEnter = document.getElementById('fullscr');
-fsEnter.addEventListener('click', function (e) {
-    e.preventDefault();
-    if (!fullscreen) {
-        fullscreen = true;
-        document.documentElement.requestFullscreen();
-        fsEnter.innerHTML = "Exit Fullscreen";
-    }
-    else {
-        fullscreen = false;
-        document.exitFullscreen();
-        fsEnter.innerHTML = "Go Fullscreen";
-    }
-});

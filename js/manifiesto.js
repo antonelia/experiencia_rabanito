@@ -1,4 +1,4 @@
-$("#manifiesto").hide();
+//$("#manifiesto").hide();
 
 // Creo variables para guardar el valor numerico que luego se usa para calcular cuanto mover el boton
 var moverX = 0;

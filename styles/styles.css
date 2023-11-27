@@ -507,3 +507,39 @@ body.modal-open section{
 .plyr button{
   border-radius: 50%;
 }
+
+/*swup*/
+
+.transition-fade{
+  opacity: 1;
+  transition: 500ms;
+}
+
+html.is-animating .transition-fade{
+  opacity: 0;
+}
+
+html.is-leaving .transition-fade{
+  opacity: 0;
+}
+
+/*barba*/
+ul.transition{
+  display: flex;
+  position: absolute;
+  z-index: 10000;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
+}
+
+ul.transition li{
+  transform: scaleY(0);
+  background-color: #6DC2C4;
+  width: calc(100vw/5);
+  list-style-type: none;
+}
