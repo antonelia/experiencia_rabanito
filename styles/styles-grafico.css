@@ -310,3 +310,57 @@ section{
   top: 45vh;
   right: 9px;
 }
+
+.page-transition{
+  position: absolute;
+    width: 100vw;
+    overflow: hidden;
+    height: 100vh;
+    z-index: 10000;
+}
+
+#rosa{
+  background: var(--pink-color);
+}
+#amarillo{
+  background: var(--yellow-color);
+}
+#celeste{
+  background: var(--light-blue-color);
+
+}
+
+.top-100vh{
+  top: 100vh;
+}
+
+.top-0vh{
+  top: 0vh;
+}
+
+
+.transicion{
+  animation: transicion 2s ease-in-out;
+}
+
+@keyframes transicion{
+  from{
+      top:-100vh;
+  }
+  to{
+      top: 100vh;
+  }
+}
+
+.transicion-celeste{
+  animation: transicion-celeste 2s ease-in-out;
+}
+
+@keyframes transicion-celeste{
+  from{
+      top:0vh;
+  }
+  to{
+      top: 100vh;
+  }
+}

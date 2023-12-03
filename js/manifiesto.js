@@ -29,4 +29,8 @@ $("#navegar-grafico").on("click", function(){
     $("#celeste").addClass("transicion-final");
     $("#celeste").removeClass("top-100vh");
   }, 500);
+  setTimeout(function(){ 
+    window.location.href = 'grafico.html';
+  }, 3000);
+  
 });

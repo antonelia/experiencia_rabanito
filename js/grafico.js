@@ -66,6 +66,20 @@ var boxThree = false;
 var boxFour = false;
 var boxFive= false;
 
+$(window).on('load', function(){
+  $("#celeste").addClass("transicion-celeste");
+  $("#celeste").removeClass("top-0vh");
+  $("#celeste").addClass("top-100vh");
+
+  setTimeout(function(){ 
+      $("#amarillo").addClass("transicion");
+  }, 0);
+
+  setTimeout(function(){
+    $("#rosa").addClass("transicion");
+  }, 500);
+});
+
 $(document).ready(function () {
 
 
@@ -135,33 +149,21 @@ $('#box-five').mouseenter(function () {
 });
 
 //Gallery
-
-$(document).ready(function () {
-  $('#box-one').click(function () {
-    $('#modal-one').modal('show');
-  });
+$('#box-one').click(function () {
+  $('#modal-one').modal('show');
 });
 
-$(document).ready(function () {
-  $('#box-two').click(function () {
-    $('#modal-two').modal('show');
-  });
+$('#box-two').click(function () {
+  $('#modal-two').modal('show');
 });
 
-$(document).ready(function () {
-  $('#box-three').click(function () {
-    $('#modal-three').modal('show');
-  });
+$('#box-three').click(function () {
+  $('#modal-three').modal('show');
+});
+$('#box-four').click(function () {
+  $('#modal-four').modal('show');
 });
 
-$(document).ready(function () {
-  $('#box-four').click(function () {
-    $('#modal-four').modal('show');
-  });
-});
-
-$(document).ready(function () {
-  $('#box-five').click(function () {
-    $('#modal-five').modal('show');
-  });
+$('#box-five').click(function () {
+  $('#modal-five').modal('show');
 });
