@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,7 @@
     <link rel="stylesheet" href="lib/slick/slick.css">
     <link rel="stylesheet" href="lib/slick/slick-theme.css">
     <script src="https://kit.fontawesome.com/a1c6ec28f2.js" crossorigin="anonymous"></script>
-    
+
     <!--favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
@@ -23,138 +24,122 @@
 
     <title>Experiencia Rabanito | Gráfico</title>
 </head>
+
 <body>
-   <!-- <div id="loader" class="background-lightblue">
+
+    <!--Loader-->
+    <div id="loader" class="background-lightblue">
         <span class="loader"></span>
     </div>
-    
-    <label class="switch-mode">
-        <input class='toggle-checkbox' type='checkbox' id="darkModeToggle"></input>
-        <div class='toggle-slot'>
-          <div class='sun-icon-wrapper'>
-            <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></div>
-          </div>
-          <div class='toggle-button'></div>
-          <div class='moon-icon-wrapper'>
-            <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></div>
-          </div>
-        </div>
-    </label>-->
 
-    <!-- Nike con slider antes y después  -->
-    <section class="section" id="seccion-antes-y-despues" data-barba-namespace="grafico" data-barba="container">
-        <div id="page">
-            <div class="wrapper">
-              <div class="before">
-                <img class="content-image" src="assets/img/nike-final.png" draggable="false"/>   </div>
-              <div class="after">
-                <img class="content-image" src="assets/img/nike-fondo.png" draggable="false"/>
-              </div>
-              <div class="scroller">
-                <svg class="scroller__thumb" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><polygon points="0 50 37 68 37 32 0 50" style="fill:#fff"/><polygon points="100 50 64 32 64 68 100 50" style="fill:#fff"/></svg>
-              </div>
-            </div>
-        </div>
-        <div class="col d-flex flex-column align-items-start justify-content-center">
-            <h3>Monster Inc</h3>
-            <p>Trabajo vectorizado inspirado en la obra de Tom Whalen</p>
-            <div class="d-flex justify-content-center">
-                <i class="bi bi-vector-pen"></i>
-                <i class="bi bi-bookmark-heart"></i>
-                <i class="bi bi-bezier"></i>
-            </div>
-        </div>
-    </section>
+    <!--Misc-->
+    <div class="purple-waves wow fadeInDown" data-wow-delay="1s"></div>
+    <div class="lightblue-waves wow fadeInDown" data-wow-delay="1s"></div>
+    <div class="cubo-3d wow fadeInDown" data-wow-delay="1s"></div>
+    <div class="yellow-waves wow fadeInDown" data-wow-delay="1s"></div>
+    <div class="r wow fadeInDown" data-wow-delay="1s"></div>
 
-    <!-- Ilustracion parallax -->
-    <section class="section" id="seccion-parallax">
-        <div class="row">
-            <div class="col">
-                <div class="image-container">
-                    <canvas id="canvas" class="canvas" width="849" height="1200"></canvas>
-                    <div class="loading-screen" id="loading">Dame un segundito, por favor...</div>
-                    <section class="info">
-                    </section>
-                </div>
-            </div>
-            <div class="col d-flex flex-column justify-content-center">
-                <h3>Ilustración inspirada en la obra de Tom Wallen</h3>
-                <h3>Usá el 🐭 para moverlo y ver sus capas</h3>
+    <!--Gallery-->
+    <body>
+        <div class="grid wow fadeInUp" data-wow-delay="1s" id="gallery">
+            <div class="container">
+                <div id="box-one" class="box one" style="--img:url(../assets/img/ilustracion-chica.jpg)"
+                    data-text="Black-crested titmouse"></div>
+                <div id="box-two" class="box two" style="--img:url(../assets/img/collage-mujer-vintage.jpg)"
+                    data-text="Sialia sialis"></div>
+                <div id="box-three" class="box three" style="--img:url(../assets/img/ilustracion-nike.jpg)"
+                    data-text="Javan Myna "></div>
+                <div id="box-four" class="box four" style="--img:url(../assets/img/ilustracion-los-simpsons.png)"
+                    data-text="Melospiza"></div>
+                <div id="box-five" class="box five" style="--img:url(../assets/img/ilustracion-frozen.png)"
+                    data-text="Merops bulocki"></div>
             </div>
         </div>
-    </section>
 
-    <!-- Branding -->
-    <section class="section d-flex align-items-center">
-        <div class="container-fluid">
-            <div class="row m-auto">
-                <div class="col-6 text-center">
-                    <img src="assets/img/logo-indar-color.png" alt="Logo Indar" class="logo-indar" width="70%">
-                </div>
-                <div class="col-6">
-                    <h3>Indar SRL</h3>
-                    <p>Branding para fábrica de sillas</p>
-        
-                    <div class="d-flex">
-                        <i class="fa-solid fa-pen-nib"></i>
-                        <i class="fa-solid fa-wand-magic-sparkles"></i>
-                        <i class="fas fa-bezier-curve"></i>
+    <!--Modal-->
+        <div class="modal fade" id="modal-one" tabindex="-1" aria-labelledby="modal-oneLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="assets/img/ilustracion-chica.jpg" class="img-fluid" alt="Image">
                     </div>
                 </div>
             </div>
         </div>
-        
-    </section>
 
-    <!-- Cierre -->
-    <section class="section d-flex align-items-center">
-        <div class="container-fluid">
-            <div class="row m-auto">
-                 <div class="text-center">
-                     <h2 class="wow fadeInDown">Ahora que te parece si sumamos una dimensión y exploramos nuestros trabajos en 3D?</h2>
-                     <a class="wow fadeInDown btn btn-primary mt-5" data-wow-delay="1s" type="button" class="btn btn-primary" href="trabajos-3D.html"><span>Continuar</span></a>
-                 </div>
-             </div>
-         </div>
-    </section>
+        <!--JS-->
+        <script type="text/javascript" src="lib/gravity/box-2d.js"></script>
+        <script type="text/javascript" src="lib/gravity/gravity.js"></script>
 
-    <!--JS-->
+        <script src="lib/bootstrap-5.2.3/dist/js/bootstrap.bundle.js"></script>
+        <script src="lib/jQuery-3.6.4/jquery-3.6.4.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <!-- <script src="lib/slick/slick.js"></script> -->
 
-    <script src="lib/bootstrap-5.2.3/dist/js/bootstrap.bundle.js"></script>
-    <script src="lib/jQuery-3.6.4/jquery-3.6.4.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <!-- <script src="lib/slick/slick.js"></script> -->
+        <script>
+            new WOW().init();
+        </script>
 
-    <script>
-        new WOW().init();
-    </script>
+        <!-- <script>
+        $(document).ready(function(){
+            $('#slick-slider').slick({
+                infinite: true,
+                speed: 300,
+                slidesToShow: 4,
+                slidesToScroll: 4,
 
-    <script>
-        $('#slider-2').click(function(){
-            $('#seccion-antes-y-despues').addClass('d-none');
-            $('#seccion-parallax').removeClass('d-none');
-        }); 
+                responsive: [
+                    {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                    }
+                    },
+                    {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                    },
+                    {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                    }
+                ]
+                
+            });
 
-        $('#slider-1').click(function(){
-            $('#seccion-parallax').addClass('d-none');
-            $('#seccion-antes-y-despues').removeClass('d-none');
-        }); 
-    </script>
+        });
+
+    </script> -->
+
+        <script>
+            $('#slider-2').click(function () {
+                $('#seccion-antes-y-despues').addClass('d-none');
+                $('#seccion-parallax').removeClass('d-none');
+            });
+
+            $('#slider-1').click(function () {
+                $('#seccion-parallax').addClass('d-none');
+                $('#seccion-antes-y-despues').removeClass('d-none');
+            });
+        </script>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js" integrity="sha512-lIKG1kC5TMb1Zx32vdz1n31YJMZRknVY20U9MJ28hD3y2c0OKN0Ce5NhJji78v8zX5UOSsm+MTBOcJt7yMBnSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="js/parallax.js"></script>
-    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js">   </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js"
+            integrity="sha512-lIKG1kC5TMb1Zx32vdz1n31YJMZRknVY20U9MJ28hD3y2c0OKN0Ce5NhJji78v8zX5UOSsm+MTBOcJt7yMBnSg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"> </script>
 
-    <!-- unpkg -->
-    <script src="https://unpkg.com/@barba/core"></script>
-    <!-- jsdelivr -->
-    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    
-   
-    <script src="js/custom.js"></script>
-    <script src="js/grafico.js"></script>
-    
-</body>
+        <script src="js/loader.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/grafico.js"></script>
+
+    </body>
+
 </html>

@@ -1,0 +1,116 @@
+/* Manifiesto styles */
+
+/*loader*/
+
+.loader {
+  position: absolute;
+  top: calc(50vh - 24px);
+  left: calc(50vw - 24px);
+  width:  48px;
+  height: 48px;
+  background: var(--pink-color);
+  transform: rotateX(65deg) rotate(45deg);
+  /* transform: perspective(200px) rotateX(65deg) rotate(45deg);  */
+  color: #fff;
+  animation: layers1 1s linear infinite alternate;
+}
+
+.background-white{
+  background: white;
+}
+
+@keyframes layers1 {
+  0% { box-shadow: 0px 0px 0 0px  }
+ 90% , 100% { box-shadow: 20px 20px 0 -4px  }
+}
+@keyframes layerTr {
+  0% { transform:  translate(0, 0) scale(1) }
+  100% {  transform: translate(-25px, -25px) scale(1) }
+}
+    
+/*end loader*/
+
+/*Section*/
+
+section{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Shapes*/
+
+/* Miscelaneas */
+.purple-waves{
+  background: url("../assets/img/waves-violetas.png") no-repeat;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 104px;
+  position: absolute;
+  top: 5vh;
+  right: -10px;
+}
+
+.lightblue-waves{
+  background: url("../assets/img/waves-celestes.png") no-repeat;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 56px;
+  position: absolute;
+  top: 20vh;
+}
+
+.yellow-waves{
+  background: url("../assets/img/waves-amarillas.png") no-repeat;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 104px;
+  position: absolute;
+}
+
+.cubo-3d{
+  background: url("../assets/img/cubo-3d.png") no-repeat;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  top: 75vh;
+  right: -50px;
+}
+
+.cubo-3d-2{
+  background: url("../assets/img/cubo-3d.png") no-repeat;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 80vh;
+  left: 0px;
+}
+/* end miscenaleas */
+
+/*Message*/
+.next-section{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.50);
+}
+
+.band{
+  background-color: white;
+    width: 100%;
+    padding: 4rem;
+}
