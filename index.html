@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap Lib -->
     <link rel="stylesheet" href="lib/bootstrap-5.2.3/dist/css/bootstrap.css">
+    <!-- Animate lib -->
     <link rel="stylesheet" href="lib/animate.css/animate.css">
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/a1c6ec28f2.js" crossorigin="anonymous"></script>
     
     <!--favicon-->
@@ -18,7 +21,6 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/styles-index.css">
     <link rel="stylesheet" href="styles/styles_dark_mode.css">
-    <link rel="stylesheet" href="styles/style-plugin.css">
 
     <!--Lottie-->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -26,6 +28,9 @@
     <title>Experiencia Rabanito</title>
 </head>
 <body>
+    <!-- <div id="loader">
+        <div class="lds-heart"><div></div></div>
+    </div> -->
 
     <div id="intro">
         <section class="inicio-animacion linea-1 justify-content-center align-items-center">
@@ -51,163 +56,23 @@
 
     <div class="white-circle inicio-circulo"></div>
     
-   <!-- Seccion 1 presentación -->
-
-    <section class="section" id="section1">
-        <div class="scrollDist"></div>
-
-        <div class="main">
-        <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
-            <mask id="m">
-            <g class="cloud1">
-                <rect fill="#fff" width="100%" height="801" y="799" />
-                <image href="./assets/img/cloudsMask.png" width="1200" height="800"/>
-            </g>
-            </mask>
-            
-            <image class="sky" href="./assets/img/sky.png"  width="1200" height="590" />
-            <image class="mountBg" href="./assets/img/mountBg.png" width="1300" height="950"/>    
-            <image class="mountMg" href="./assets/img/mountMg.png" width="1200" height="800"/>    
-            <image class="cloud2" href="./assets/img/clouds2.png" width="1200" height="800"/>    
-            <image class="mountFg" href="./assets/img/mountFg.png" width="1200" height="800"/>
-            <image class="cloud1" href="./assets/img/clouds1.png" width="1200" height="800"/>
-            <image class="cloud3" href="./assets/img/clouds3.png"  width="1200" height="900"/>
-            <text fill="#fff" x="19%" y="210">¿Dónde estamos? En un mundo en donde todo puede pasar.</text>
-            <polyline class="arrow" id="arrow" fill="#fff" points="599,250 599,289 590,279 590,282 600,292 610,282 610,279 601,289 601,250" />
-            
-            <g mask="url(#m)">
-                <rect fill="#fff" width="100%" height="100%" />      
-                <text x="9%" y="200" fill="#162a43">Te llevaremos por una serie de instancias en donde vas a poder experimentar</text>
-                <text x="30%" y="240" fill="#162a43">los diversos planos que nos conforman.</text>
-
-                <g id="arrowBtn" width="140" x="550" y="500" height="163" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1.92146e-07 41.2233L69.7947 81.5193L69.7947 162.111L-1.58334e-06 121.815L1.92146e-07 41.2233Z" fill="#E43C5A"/>
-                    <rect width="80.592" height="80.592" transform="matrix(0.866025 -0.5 2.20305e-08 1 69.7953 81.5195)" fill="#E9DF67"/>
-                    <path d="M69.7953 0.927803L139.59 41.2238L69.7953 81.5198L0.000595745 41.2238L69.7953 0.927803Z" fill="#6DC2C4"/>
-                </g>
-            </g>
-            
-            
-            
-        </svg>
-        </div>
-    </section>
-    
-    <!-- Cookies
-        
-    Mensaje de alerta 
-
-    <div class="modal fade" id="cookies-section" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-md">
-            <div class="modal-content">
-                <div class="modal-header justify-content-center">
-                    <lottie-player src="https://lottie.host/a9c38abd-1e57-485f-b931-81222e46a100/7v16ANZPwN.json" background="transparent"  speed="0.2"  style="width: 200px; height: 200px;" loop autoplay></lottie-player>
-                </div> 
-                <div class="modal-body text-center">
-                    <h3><b>Permitir Cookies</b></h3>
-                    <p class="mt-3">Usamos cookies para asegurarnos la mejor experiencia dentro de nuestro sitio</p>
-                </div>
-                <div class="modal-footer justify-content-evenly">
-                    <button class="btn btn-secondary"id="no-accept-cookies">No, gracias</button>
-                    <button class="btn btn-primary" id="accept-cookies">Ñom ¡Que rico!</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-   Cookies Modal
-
-    <div class="modal fade" id="cookies-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> 
-                </div>
-                <div class="modal-body text-center">
-                    <h3><b>¡Cookies aceptadas!</b></h3>
-                    <p class="mt-3">Es bueno empezar la experiencia con algo dulce! 😋<br>Dale a <b>"continuar"</b> para seguir conociéndonos</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" id="continuar-cookies"><span>Continuar</span></button>
-                </div>
-            </div>
-        </div>
-    </div>  
-
-    Gatitos Modal
-    <div class="modal fade" id="gatitos-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    
-                </div>
-                <div class="modal-body">
-                    <h3><b>¿No te gustan las cookies? 🥺</b></h3>
-                    <p>Esperamos que si te gusten los gatitos como a nosotras</p>
-                    <p>Ahora te invitamos a que nos conozcas un poco más</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary"  id="continuar-gatitos"><span>Continuar</span></button>
-                </div>
-            </div>
-        </div>
-    </div>-->
-
-
     <!--JS-->
-    
-    
-    <!--scroll-->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js'></script>
-    <script src='./js/gsap.min.js'></script>
-    <script src='./js/ScrollTrigger.min.js'></script>
-    <script src='https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js'></script>
 
     <script src="lib/bootstrap-5.2.3/dist/js/bootstrap.bundle.js"></script>
     <script src="lib/jQuery-3.6.4/jquery-3.6.4.min.js"></script>
-    <script src="js/emoji-rain.js"></script>
-    <script src="js/intro.js"></script>
+    <script src="js/index.js"></script>
+    <!-- Wow lib -->
     <script src="lib/wow/wow.min.js"></script>
 
-
-   <script>
+    <script>
         new WOW().init();
     </script>
 
     <script src="https://code.iconify.design/1/1.0.4/iconify.min.js">   </script>
+    
+   
     <script src="js/custom.js"></script>
     
-    <script>
-        function iraManifiesto(){
-            setTimeout(function() {
-            window.location.href = "/manifiesto.html";
-            }, 150);
-        }
-    </script>
     
-    <script> 
-        /*Scroll*/
-        gsap.set('.main', {position:'fixed', background:'#fff', width:'100%', maxWidth:'1200px', height:'100%', top:0, left:'50%', x:'-50%'})
-        gsap.set('.scrollDist', {width:'100%', height:'200%'})
-        gsap.timeline({scrollTrigger:{trigger:'.scrollDist', start:'top top', end:'bottom bottom', scrub:1}})
-            .fromTo('.sky', {y:0},{y:-200}, 0)
-            .fromTo('.cloud1', {y:100},{y:-800}, 0)
-            .fromTo('.cloud2', {y:-150},{y:-500}, 0)
-            .fromTo('.cloud3', {y:-50},{y:-650}, 0)
-            .fromTo('.mountBg', {y:-10},{y:-100}, 0)
-            .fromTo('.mountMg', {y:-30},{y:-250}, 0)
-            .fromTo('.mountFg', {y:-50},{y:-600}, 0)
-
-        $('#arrowBtn').on('mouseenter', (e)=>{ gsap.to('.arrow', {y:10, duration:0.8, ease:'back.inOut(3)', overwrite:'auto'}); })
-        $('#arrowBtn').on('mouseleave', (e)=>{ gsap.to('.arrow', {y:0, duration:0.5, ease:'power3.out', overwrite:'auto'}); })
-        $('#arrowBtn').on('click', (e)=>{ gsap.to(window, {scrollTo:innerHeight, duration:1.5, ease:'power1.inOut'}); }) // scrollTo requires the ScrollTo plugin (not to be confused w/ ScrollTrigger)
-
-        $(window).on('load', function(){
-            $('#arrow').hide();
-            setTimeout(function() {
-                $("#arrow").fadeIn();
-            }, 3000);
-        });
-    </script>
 </body>
 </html>

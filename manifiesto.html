@@ -29,55 +29,17 @@
         <link rel="stylesheet" href="styles/styles_dark_mode.css">
         
     </head>
-    <body data-barba="wrapper">
-        <!-- Old
-        
-            Loader 
+    <body>
         <div id="loader" class="background-darkblue">
-            <div class="loadingio-spinner-dual-ball-cnoby0fxu"><div class="ldio-5r7yozft0s8">
-                <div></div><div></div><div></div>
-            </div></div>
+
         </div>
-
-        <label class="switch-mode">
-            <input class='toggle-checkbox' type='checkbox' id="darkModeToggle"></input>
-            <div class='toggle-slot'>
-              <div class='sun-icon-wrapper'>
-                <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></div>
-              </div>
-              <div class='toggle-button'></div>
-              <div class='moon-icon-wrapper'>
-                <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></div>
-              </div>
-            </div>
-        </label>-->
-
-        <ul class="transition">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
         
-        <!-- Seccion 3 Manifiesto -->
-        <section class="section d-flex align-items-center" id="section-manifiesto" data-barba-namespace="intro" data-barba="container">
+        <!--Manifiesto -->
+        <section class="section d-flex align-items-center" id="section-manifiesto">
             <div class="lightblue-waves"></div>
             <div class="yellow-waves"></div>
             <div class="cubo-3d cubo-1"></div>
             <div class="cubo-3d abajo"></div>
-            <!-- Intro
-            <div class="container-fluid" id="manifiesto-intro">
-                <div class="row m-auto">
-                    <div class="text-center">
-                        <h2 class="wow fadeInDown" data-wow-delay="1s">Por fuera podemos parecer como cualquier otra agencia,</h2>
-                        <h2 class="wow fadeInDown" data-wow-delay="2s">coloridos y alegres peeeero por dentro somos inesperados.</h2>
-                        <h2 class="wow fadeInDown" data-wow-delay="3s"> Así de inesperados como el sabor del rábano:</h2>
-                        <h2 class="wow fadeInDown" data-wow-delay="4s">crujiente, ligero y un toque picante.</h2>
-                        <button class="wow fadeInDown btn btn-primary mt-5" id="ver-manifiesto"  data-wow-delay="5s">Ver video</button>
-                    </div>
-                </div>
-            </div>-->
             <!-- Video -->
             <div class="container-fluid text-center my-auto justify-content-center" id="manifiesto">
                 <video id="player" playsinline controls data-poster="./assets/img/videocaso-thumbnail.png" class="d-none">
@@ -97,11 +59,16 @@
                         <p class="mt-3">Vayamos por partes, por que no empezamos por un plano CMYK/gráfico/visual?</p>
                     </div>
                     <div class="modal-footer">
-                        <a type="button" class="btn btn-primary" href="grafico.html"><span>👀</span></a>
+                        <a type="button" class="btn btn-primary" id="navegar-grafico"><span>👀</span></a>
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
+
+        <!-- Transicion -->
+        <div class="page-transition top-100vh" id="rosa"></div>
+        <div class="page-transition top-100vh" id="amarillo"></div>
+        <div class="page-transition top-100vh" id="celeste"></div>
         <!--JS-->
 
         <script src="lib/bootstrap-5.2.3/dist/js/bootstrap.bundle.js"></script>
@@ -114,14 +81,9 @@
         <!-- Plyr lib -->
 	    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
         <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
-
-        <!-- unpkg -->
-        <script src="https://unpkg.com/@barba/core"></script>
-        <!-- jsdelivr -->
-        <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
    
         <script src="js/custom.js"></script>
+        <script src="js/loader.js"></script>
         <script src="js/manifiesto.js"></script>
 
         <script>
