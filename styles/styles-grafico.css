@@ -206,6 +206,7 @@ body {
   align-items: center;
   /*filter: brightness(1.25);*/
   border-radius: 25px;
+  cursor: pointer;
 }
 .container:hover .box {
   filter: grayscale(1);
