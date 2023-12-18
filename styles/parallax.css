@@ -1,24 +1,24 @@
-#seccion-parallax p {
+#modal-two p {
   margin-top: 0;
   margin-bottom: 0.5rem;
   padding: 0 1rem;
 }
 
-#seccion-parallax a {
+#modal-two a {
   color: #c3749d;
   white-space: nowrap;
 }
 
-#seccion-parallax a:hover {
+#modal-two a:hover {
   text-decoration: none;
 }
 
-#seccion-parallax ul {
+#modal-two ul {
   padding-left: 2rem;
   list-style: none;
 }
 
-#seccion-parallax ul li::before {
+#modal-two ul li::before {
   content: "\2022";
   color: #c3749d;
   display: inline-block;
@@ -26,18 +26,18 @@
   margin-left: -1em;
 }
 
-#seccion-parallax .demo-mode .info {
+#modal-two .demo-mode .info {
   display: none;
 }
 
-#seccion-parallax #seccion-parallax .demo-mode.image-container {
+#modal-two .demo-mode.image-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#seccion-parallax .info {
+#modal-two .info {
   position: relative;
   z-index: 1;
   max-width: 30rem;
@@ -47,7 +47,7 @@
   padding-top: 0.5rem;
 }
 
-#seccion-parallax .image-container {
+#modal-two .image-container {
   position: relative;
   width: 100%;
   height: 100%;
@@ -58,7 +58,7 @@
   padding: 0 1rem;
 }
 
-#seccion-parallax .canvas {
+#modal-two .canvas {
   position: relative;
   max-width: 30rem;
   width: 100%;
@@ -82,7 +82,7 @@
   }
 }
 
-#seccion-parallax .loading-screen {
+#modal-two .loading-screen {
   opacity: 1;
   visibility: visible;
   position: absolute;
@@ -104,19 +104,19 @@
   transition: 0.25s ease all 0.75s;
 }
 
-#seccion-parallax .loading-screen.hidden {
+#modal-two .loading-screen.hidden {
   visibility: hidden;
   opacity: 0;
   transform: translateZ(0);
 }
 
-#seccion-parallax .version {
+#modal-two .version {
   position: absolute;
   bottom: 0;
   left: 0;
 }
 
-#seccion-parallax .button {
+#modal-two .button {
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -134,11 +134,11 @@
   text-decoration: none;
 }
 
-#seccion-parallax .button[download] {
+#modal-two .button[download] {
   margin: 1rem auto;
 }
 
-#seccion-parallax .allow-motion-button {
+#modal-two .allow-motion-button {
   opacity: 0;
   visibility: hidden;
   position: absolute;
@@ -154,17 +154,17 @@
   border-radius: 2rem;
 }
 
-#seccion-parallax .allow-motion-button.visible {
+#modal-two .allow-motion-button.visible {
   visibility: visible;
   opacity: 1;
 }
 
-#seccion-parallax .title {
+#modal-two .title {
   font-weight: 700;
   color: #c3749d;
 }
 
-#seccion-parallax .only-mobile {
+#modal-two .only-mobile {
   display: none;
 }
 
@@ -173,18 +173,18 @@
     font-size: 0.9rem;
   }
 
-  #seccion-parallax .title {
+  #modal-two .title {
     margin-top: 1rem;
   }
 
-  #seccion-parallax .canvas {
+  #modal-two .canvas {
     max-width: 100%;
     height: auto;
   }
 }
 
 @media screen and (max-height: 50rem) {
-  #seccion-parallax .canvas {
+  #modal-two .canvas {
     width: auto;
     max-height: 50vh;
     margin: 0 auto;
@@ -192,29 +192,29 @@
 }
 
 @media screen and (max-height: 33rem) {
-  #seccion-parallax .canvas {
+  #modal-two .canvas {
     max-width: 88%;
     height: auto;
     margin: 0 auto;
   }
 
-  #seccion-parallax .button[download] {
+  #modal-two .button[download] {
     padding: 0.5rem;
   }
 }
 
 @media only screen and (hover: none) and (pointer: coarse) {
-  #seccion-parallax .only-mobile {
+  #modal-two .only-mobile {
     display: block;
   }
 
-  #seccion-parallax .only-desktop {
+  #modal-two .only-desktop {
     display: none;
   }
 }
 
 @media (orientation: landscape) {
-  #seccion-parallax .image-container {
+  #modal-two .image-container {
     display: flex;
     flex-direction: column;
     flex-wrap: initial;
@@ -223,10 +223,15 @@
     justify-content: center;
   }
 
-  #seccion-parallax .canvas {
+  #modal-two .canvas {
     width: 100%;
     max-height: 100%;
     height: auto;
     margin-top: 0;
+  }
+}
+@media(max-width: 1440px){
+  #modal-two .canvas{
+    max-width: 20rem;
   }
 }

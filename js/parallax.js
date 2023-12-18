@@ -25,71 +25,71 @@ const baseConfig = {
 const layerList = [
   {
     ...baseConfig,
-    src: '../assets/img/img-monster-inc-2/1.png',
+    src: '../assets/img/img-monster-inc/1.png',
     zIndex: -3.5,
   },
   
   {
     ...baseConfig,
-    src: '../assets/img/img-monster-inc-2/13.png',
+    src: '../assets/img/img-monster-inc/13.png',
     zIndex: -4,
   },
   {
     ...baseConfig,
-    src: '../assets/img/img-monster-inc-2/2.png',
+    src: '../assets/img/img-monster-inc/2.png',
     zIndex: -3,
     opacity: 0.3,
   },
   {
     ...baseConfig,
-    src: '../assets/img/img-monster-inc-2/3.png',
+    src: '../assets/img/img-monster-inc/3.png',
     zIndex: -2,
   },
   {
     ...baseConfig,
-    src: '../assets/img/img-monster-inc-2/4.png',
+    src: '../assets/img/img-monster-inc/4.png',
     zIndex: -1.5,
   },
   {
     ...baseConfig,
-    src: '../assets/img/img-monster-inc-2/5.png',
+    src: '../assets/img/img-monster-inc/5.png',
     zIndex: -1,
   },
   {
     ...baseConfig,
-    src: '../assets/img/img-monster-inc-2/6.png',
+    src: '../assets/img/img-monster-inc/6.png',
     zIndex: -0.5,
     opacity: 0.3,
   },
   {
     ...baseConfig,
-    src: '../assets/img/img-monster-inc-2/7.png',
+    src: '../assets/img/img-monster-inc/7.png',
     zIndex: 0,
   },
   {
     ...baseConfig,
-    src: '../assets/img/img-monster-inc-2/8.png',
+    src: '../assets/img/img-monster-inc/8.png',
     zIndex: 0.5,
     opacity: 0.3,
   },
   {
     ...baseConfig,
-    src: '../assets/img/img-monster-inc-2/9.png',
+    src: '../assets/img/img-monster-inc/9.png',
     zIndex: 1,
   },
   {
     ...baseConfig,
-    src: '../assets/img/img-monster-inc-2/10.png',
+    src: '../assets/img/img-monster-inc/10.png',
     zIndex: 1.5,
   },
   {
     ...baseConfig,
-    src: '../assets/img/img-monster-inc-2/11.png',
+    src: '../assets/img/img-monster-inc/11.png',
     zIndex: 2,
   },
   {
     ...baseConfig,
-    src: '../assets/img/img-monster-inc-2/12.png',
+    src: '../assets/img/img-monster-inc/12.png',
     zIndex: 3,
   },
 ]

@@ -1,5 +1,9 @@
 /* Manifiesto styles */
 
+body{
+  height: 100vh;
+  overflow-y: hidden;
+}
 /*loader*/
 
 .loader {
@@ -34,27 +38,13 @@
 
   /*end loader*/
 
-
-.slide-section{
-    height: 700px;
-    justify-content: space-around;
-    align-items: flex-end;
-}
-
-
-.slick-slide:hover{
-    cursor: pointer;
-    transform: scale(1.05);
-    transition: .3s;
-}
-
 .prueba-fade img{
     position: absolute;
 }
 
 /* Seccion Nike antes y después*/
 #page{
-    width: 50%;
+    width: 100%;
     height: 100%;
     position:absolute;
 }
@@ -67,13 +57,20 @@
   
 /* Our wrapper */
 .wrapper{
-    width: 424px;
-    height: 600px;
+    width: calc(424px * 1.15); 
+    height: calc(600px * 1.15) ;
     position: absolute;
     left:50%;
-    top:50%;
-    transform:translate3d(-50%,-50%,0);
+    top:55%;
+    transform:translate3d(-50%,-45%,0);
     overflow:hidden;
+}
+
+@media(max-width:1400px){
+  .wrapper{
+    width: calc(424px * 0.75); 
+    height: calc(600px * 0.75) ;
+  }
 }
   
 /* Our image information */
@@ -190,11 +187,17 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   width: 1000px;
   height: 700px;
   transition: 0.5s;
+}
+@media(max-width:1400px){
+  .container{
+    height: 500px;
+    max-width: 700px;
+  }
 }
 .box {
   position: relative;
@@ -215,32 +218,32 @@ body {
   filter: grayscale(0) /*brightness(1.25)*/;
 }
 .container:has(.one:hover) {
-  grid-template-columns: 2fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  grid-template-columns: 1.25fr 0.5fr 0.5fr;
 }
 .container:has(.two:hover) {
-  grid-template-columns: 0.5fr 2fr 0.5fr 0.5fr 0.5fr;
+  grid-template-columns: 0.5fr 1.25fr 0.5fr;
 }
 .container:has(.three:hover) {
-  grid-template-columns: 0.5fr 0.5fr 2fr 0.5fr 0.5fr;
+  grid-template-columns: 0.5fr 0.5fr 1.25fr;
 }
-.container:has(.four:hover) {
-  grid-template-columns: 0.5fr 0.5fr 0.5fr 2fr 0.5fr;
-}
-.container:has(.five:hover) {
-  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 2fr;
+
+@media(max-width:1440px){
+  .container:has(.one:hover) {
+    grid-template-columns: 1.25fr 0.5fr 0.5fr;
+  }
+  .container:has(.two:hover) {
+    grid-template-columns: 0.5fr 1.25fr 0.5fr;
+  }
+  .container:has(.three:hover) {
+    grid-template-columns: 0.5fr 0.5fr 1.25fr;
+  }
 }
 
 .container .box::before {
   content: "";
   width: 100%;
   height: calc(100% + 2px);
-  /*background: linear-gradient(
-    white,
-    transparent,
-    transparent,
-    transparent,
-    white
-  );*/
+
 }
 .container .box:nth-child(even) {
   transform: translateY(20px);
@@ -266,7 +269,11 @@ body {
   opacity: 1;
   transition: 0.2s;
   transition-delay: 0.2s;
-  bottom: -40px;
+  bottom: -50px;
+  font-size: 1.5rem;
+  font-family: Lato;
+  color: var(--dark-blue-color);
+  margin-top: 1rem;
 }
 
 /*Section*/
@@ -364,4 +371,56 @@ section{
   to{
       top: 100vh;
   }
+}
+
+body.modal-open section{
+  filter: blur(0) !important;
+}
+.modal-dialog{
+  background: white;
+  border-radius: 14px;
+}
+
+#modal-one h2{
+  position: absolute;
+  top: 5%;
+  text-align: center;
+  width: 100%;
+  font-size: 1.5rem;
+}
+.modal h2{
+  text-align: center;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+#modal-three{
+  /* display: flex; */
+  align-items: center;
+}
+
+#modal-three .modal-dialog{
+  max-width: 70vw;
+  min-height: fit-content;
+}
+
+.btn-close{
+  position: absolute;
+  top: -457px;
+  right: -24px;
+  background-color: white;
+  opacity: 1;
+  padding: 1em;
+  border-radius: 50%;
+  z-index: 100;
+}
+#modal-two .btn-close{
+  top: -80px;
+}
+
+#modal-three .btn-close{
+  top: -24px;
+}
+.modal.fade{
+  pointer-events: none;
 }
