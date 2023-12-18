@@ -114,3 +114,24 @@ section{
     width: 100%;
     padding: 4rem;
 }
+
+.icono-estrella-celeste{
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  background: url(../assets/img/estrella-celeste.svg) no-repeat center;
+  background-size: contain;
+  margin-top: 25px;
+}
+
+.qr-code{
+  max-width: 150px;
+}
+h6{
+  font-size: 1.2rem;
+}
+
+.stickers-filtro{
+  max-height: 80px;
+  margin-top: 35px;
+}

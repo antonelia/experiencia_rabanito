@@ -44,9 +44,9 @@ body{
 
 /* Seccion Nike antes y después*/
 #page{
-    width: 100%;
+    /* width: 100%;
     height: 100%;
-    position:absolute;
+    position:absolute; */
 }
   
 /* Our normalize css */
@@ -64,6 +64,7 @@ body{
     top:55%;
     transform:translate3d(-50%,-45%,0);
     overflow:hidden;
+    margin-top: 38vh
 }
 
 @media(max-width:1400px){
@@ -153,6 +154,10 @@ border: 2px solid #fff;
 .scroller:before,
 .scroller:after{
 background: #fff;
+}
+
+#seccion-antes-y-despues{
+  padding: 0;
 }
 
 #seccion-antes-y-despues .col{
@@ -382,8 +387,7 @@ body.modal-open section{
 }
 
 #modal-one h2{
-  position: absolute;
-  top: 5%;
+  margin-top: 10px;
   text-align: center;
   width: 100%;
   font-size: 1.5rem;
@@ -400,12 +404,12 @@ body.modal-open section{
 }
 
 #modal-three .modal-dialog{
-  max-width: 70vw;
+  max-width: 65vw;
   min-height: fit-content;
 }
 
 .btn-close{
-  position: absolute;
+  /* position: absolute; */
   top: -457px;
   right: -24px;
   background-color: white;
@@ -413,6 +417,9 @@ body.modal-open section{
   padding: 1em;
   border-radius: 50%;
   z-index: 100;
+}
+#modal-two .modal-body{
+  padding-top: 0;
 }
 #modal-two .btn-close{
   top: -80px;
@@ -423,4 +430,8 @@ body.modal-open section{
 }
 .modal.fade{
   pointer-events: none;
+}
+
+.modal-header{
+  padding-bottom: 0;
 }

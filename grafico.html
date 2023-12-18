@@ -49,13 +49,18 @@
 
         <!--Modal chica vintage-->
         <div class="modal modal-lg fade" id="modal-one" tabindex="-1" aria-labelledby="modal-oneLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <h2>Deslizá para ver el antes y después</h2>
+            <div class="modal-dialog modal-dialog-centered align-items-start">
+                
                 <div class="modal-content">
-                    <button id="close-modal-one" type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    <div id="seccion-antes-y-despues">
+                    <div class="modal-header">
+                        <button id="close-modal-one" type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                    </div>
+
+                    
+                    <div id="seccion-antes-y-despues" class="modal-body">
+                        <h2>Deslizá para ver el antes y después</h2>
                         <div id="page">
                             <div class="wrapper">
                               <div class="before">
@@ -75,17 +80,19 @@
 
         <!-- Modal Monster INC -->
         <div class="modal fade modal-lg" id="modal-two" tabindex="-1" aria-labelledby="modal-twoLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog modal-dialog-centered align-items-start">
                 <div class="modal-content">
-                    <button id="close-modal-two" type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    <h2 class="mt-4">Usá el 🐭 para moverlo y ver sus capas</h2>
-                    <div class="image-container">
+                    <div class="modal-header">
+                        <button id="close-modal-two" type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                    </div>
+                    <div class="modal-body">
+                        <h2 class="mt-3">Usá el 🐭 para moverlo y ver sus capas</h2>
+                        <div class="image-container">
                         <canvas id="canvas" class="canvas" width="849" height="1200"></canvas>
                         <div class="loading-screen" id="loading">Dame un segundito, por favor...</div>
-                        <!-- <section class="info">
-                        </section> -->
+                    </div>
                     </div>
                 </div>
             </div>
@@ -93,11 +100,13 @@
 
         <!-- Modal Hola Mundo -->
         <div class="modal fade modal-lg" id="modal-three" tabindex="-1" aria-labelledby="modal-threeLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog modal-dialog-centered align-items-start">
                 <div class="modal-content">
-                    <button id="close-modal-three" type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
+                    <div class="modal-header">
+                        <button id="close-modal-three" type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                    </div>
                     <div class="modal-body">
                         <img src="assets/img/hola-mundo-branding.png" class="img-fluid" alt="Image">
                     </div>

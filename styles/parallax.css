@@ -40,7 +40,7 @@
 #modal-two .info {
   position: relative;
   z-index: 1;
-  max-width: 30rem;
+  max-width: 32rem;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -60,7 +60,7 @@
 
 #modal-two .canvas {
   position: relative;
-  max-width: 30rem;
+  max-width: 32rem;
   width: 100%;
   display: block;
   height: auto;
