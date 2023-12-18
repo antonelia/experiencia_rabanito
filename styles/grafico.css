@@ -388,14 +388,11 @@ body.modal-open section{
 
 #modal-one h2{
   margin-top: 10px;
-  text-align: center;
-  width: 100%;
-  font-size: 1.5rem;
 }
 .modal h2{
   text-align: center;
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 #modal-three{
@@ -434,4 +431,52 @@ body.modal-open section{
 
 .modal-header{
   padding-bottom: 0;
+}
+.puntos-celestes{
+  background: url(../assets/img/dots.png) no-repeat center;
+  background-size: contain;
+  height: 30%;
+  width: 30%;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+.waves-celestes{
+  background: url(../assets/img/waves-violetas.png) no-repeat center;
+  background-size: contain;
+  height: 30%;
+  width: 30%;
+  position: absolute;
+  bottom: 25%;
+  right: 10%;
+}
+.grid-amarillo{
+  background: url(../assets/img/grid-amarillo.png) no-repeat center;
+  background-size: contain;
+  height: 30%;
+  width: 30%;
+  position: absolute;
+  bottom: 20%;
+  right: 8%;
+  z-index: 1;
+}
+.triangulo-azul{
+  background: url(../assets/img/waves-celestes.png) no-repeat center;
+  background-size: contain;
+  height: 30%;
+  width: 30%;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  z-index: 1;
+}
+#modal-two .modal-body{
+  z-index: 2;
+}
+
+@media(max-width: 1440px){
+  #modal-one .modal-dialog,
+  #modal-two .modal-dialog{
+    max-width: 550px;
+  }
 }

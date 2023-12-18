@@ -2,8 +2,9 @@
 $(window).on('load', function(){
     
              $('#loader').fadeOut();
+             setTimeout(function () {
+                document.getElementById('next-section').classList.remove('d-none');
+            }, 6000);
       
 });
-setTimeout(function () {
-    document.getElementById('next-section').classList.remove('d-none');
-}, 7000); // 5000 milliseconds = 5 seconds
+ // 5000 milliseconds = 5 seconds
