@@ -547,3 +547,7 @@ ul.transition li{
   width: calc(100vw/5);
   list-style-type: none;
 }
+
+.plyr--video .plyr__controls{
+  background: transparent;
+}
