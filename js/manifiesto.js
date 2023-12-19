@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const player = new Plyr('#player', {
       title: 'Example Title',
-      fullscreen:{ enabled: true}
+      fullscreen:{ enabled: false}
   }); 
  
   player.on('ended', function(){
