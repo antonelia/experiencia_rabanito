@@ -549,5 +549,8 @@ ul.transition li{
 }
 
 .plyr--video .plyr__controls{
-  background: transparent;
+    background: transparent;
 }
+.plyr__video-wrapper {
+    background: transparent;
+  }
