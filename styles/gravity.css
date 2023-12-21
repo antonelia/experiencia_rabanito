@@ -135,6 +135,7 @@ h6{
   max-height: 80px;
   margin-top: 35px;
 }
+<<<<<<< HEAD
 
 /*modal*/
 
@@ -151,3 +152,26 @@ h6{
   border-top: 0;
   padding-top: 0;
 }
+=======
+main span{
+  color: var(--dark-blue-color);
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Lato-Bold;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  }
+.word {
+  position: absolute;
+  cursor: grab;
+  font-size: 30px;
+  color: var(--dark-blue-color);
+}
+.word.highlighted {
+  font-weight: bold;
+  color: black;
+}
+>>>>>>> 5e18aa723c3ade18958b9d7774e2e0badec853bd

@@ -4,39 +4,6 @@ body{
   height: 100vh;
   overflow-y: hidden;
 }
-/*loader*/
-
-.loader {
-  position: absolute;
-  top: calc(50vh - 24px);
-  left: calc(50vw - 24px);
-  width:  48px;
-  height: 48px;
-  background: var(--pink-color);
-  transform: rotateX(65deg) rotate(45deg);
-  /* transform: perspective(200px) rotateX(65deg) rotate(45deg);  */
-  color: #fff;
-  animation: layers1 1s linear infinite alternate;
-}
-.loader:after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(255, 255, 255, 0.7);
-  animation: layerTr 1s linear infinite alternate;
-}
-
-@keyframes layers1 {
-  0% { box-shadow: 0px 0px 0 0px  }
- 90% , 100% { box-shadow: 20px 20px 0 -4px  }
-}
-@keyframes layerTr {
-  0% { transform:  translate(0, 0) scale(1) }
-  100% {  transform: translate(-25px, -25px) scale(1) }
-}
-    
-
-  /*end loader*/
 
 .prueba-fade img{
     position: absolute;
@@ -260,7 +227,6 @@ body {
   content: attr(data-text);
   position: absolute;
   bottom: -80px;
-  background: #fff!important;
   padding: 5px 20px;
   /*text-transform: uppercase;*/
   white-space: nowrap;
@@ -271,15 +237,29 @@ body {
 }
 
 .container .box:hover::after {
+  text-align: center;
   opacity: 1;
   transition: 0.2s;
   transition-delay: 0.2s;
   bottom: -50px;
-  font-size: 1.5rem;
-  font-family: Lato;
+  font-size: 2rem;
+  font-family: 'Lato-Bold';
   color: var(--dark-blue-color);
-  margin-top: 1rem;
+  /* background: #ffffff38; */
+  color: var(--dark-blue-color);
+  top: 0%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  backdrop-filter: blur(2px);
+  height: 18%;
+  position: absolute;
+  top: 41%;
+  background: url(../assets/img/cartelito.png) no-repeat center;
+  background-size: cover;
 }
+
 
 /*Section*/
 
@@ -480,3 +460,36 @@ body.modal-open section{
     max-width: 550px;
   }
 }
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #6dc3c46c;
+  border-bottom-color: var(--light-blue-color);
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  } 
+  .loading-screen{
+    font-size: 0px;
+  }
+  #modal-two #loaderscreen.hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
+  #loaderscreen{
+    position: absolute;
+    top: 16vw;
+  }
+
+  
