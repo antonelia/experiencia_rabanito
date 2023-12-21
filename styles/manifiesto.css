@@ -122,3 +122,18 @@ body{
       top: 0vh;
   }
 }
+
+#navegar-grafico{
+  transition: transform 0.5s ease-in-out;
+}
+#navegar-grafico:hover{
+  transform: scale(1.3);
+}
+#avanzar-modal .modal-footer{
+  border: none;
+  text-align: center;
+  justify-content: center;
+}
+.modal.fade{
+  pointer-events: none;
+}
