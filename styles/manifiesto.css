@@ -9,6 +9,10 @@ body{
 
 /*end loader */
 
+#section-manifiesto{
+  background-image: url(/assets/img/section-bg-lightblue.svg);
+}
+
 #section-manifiesto h2{
     /* width: 90%; */
     margin: auto;

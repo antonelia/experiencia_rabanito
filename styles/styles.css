@@ -466,6 +466,10 @@ header .nav-item{
     width: 65%
 }
 
+#navegar-grafico{
+  cursor: pointer !important;
+}
+
 /*Branding*/
 
 .logo-indar{

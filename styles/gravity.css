@@ -135,3 +135,19 @@ h6{
   max-height: 80px;
   margin-top: 35px;
 }
+
+/*modal*/
+
+.modal.show .modal-dialog{
+  min-width: 100vw;
+}
+
+.modal-content{
+  border-radius: 0;
+}
+
+.modal-footer{
+  justify-content: center;
+  border-top: 0;
+  padding-top: 0;
+}
