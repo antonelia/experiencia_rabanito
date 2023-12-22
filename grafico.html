@@ -101,7 +101,7 @@
             </div>
         </div>
 
-        <!-- Modal Hola Mundo -->
+        <!-- Modal Hola Mundo 
         <div class="modal fade modal-lg" id="modal-three" tabindex="-1" aria-labelledby="modal-threeLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered align-items-start">
                 <div class="modal-content">
@@ -115,6 +115,36 @@
                     </div>
                 </div>
             </div>
+        </div>-->
+
+        <div class="modal fade modal-lg" id="modal-three" tabindex="-1" aria-labelledby="modal-threeLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered align-items-start">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button id="close-modal-three" type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="assets/img/holamundo-1.png" class="img-fluid" alt="Draggable Image">
+
+                        <div class="sortable-container" id="sortable-container">
+                            <div id="sortable-column-1" class="sortable-column">
+                                <div class="sortable-item"><img src="assets/img/holamundo-2.png" class="img-fluid" alt="Image"></div>
+                                <div class="sortable-item"><img src="assets/img/holamundo-3.png" class="img-fluid" alt="Image"></div>
+                            </div>
+                            <div id="sortable-column-2" class="sortable-column">
+                                <div class="sortable-item"><img src="assets/img/holamundo-4.png" class="img-fluid" alt="Image"></div>
+                                <div class="sortable-item"><img src="assets/img/holamundo-5.png" class="img-fluid" alt="Image"></div>
+                            </div>
+                            <div id="sortable-column-3" class="sortable-column">
+                                <div class="sortable-item"><img src="assets/img/holamundo-6.png" class="img-fluid" alt="Image"></div>
+                                <div class="sortable-item"><img src="assets/img/holamundo-7.png" class="img-fluid" alt="Image"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!--JS-->
@@ -124,6 +154,9 @@
         <script src="lib/bootstrap-5.2.3/dist/js/bootstrap.bundle.js"></script>
         <script src="lib/jQuery-3.6.4/jquery-3.6.4.min.js"></script>
         <script src="lib/wow/wow.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/rearrangeable/1.0.4/rearrangeable.min.js"></script>
 
         <script>
             new WOW().init();

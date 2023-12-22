@@ -133,3 +133,51 @@ $('#close-modal-three').click(function () {
     }, 1000);
   }
 });
+
+//grilla
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  var container = document.getElementById('sortable-container');
+  var columns = Array.from(container.children);
+
+  columns.forEach(function (column, index) {
+      new Sortable(column, {
+          group: 'column',
+          animation: 150,
+          handle: '.sortable-item',
+          onStart(evt) {
+              // Check if the column has more than 2 items
+              if (evt.from.children.length > 2) {
+                  // Cache the last item before removal
+                  evt.from.lastItem = evt.from.children[2];
+              }
+          },
+          onEnd(evt) {
+              // Check if the item was moved to another column
+              if (evt.to !== evt.from) {
+                  // Check if the target column has more than 2 items
+                  if (evt.to.children.length > 2) {
+                      // Find the column with only one item
+                      var otherColumn = columns.find(col => col.children.length === 1);
+                      // Move the last item from the target column to the column with one item
+                      otherColumn.appendChild(evt.to.children[2]);
+                  }
+              }
+
+              // Check if the source column had a cached item
+              if (evt.from.lastItem) {
+                  // Add the cached item back to the source column
+                  evt.from.appendChild(evt.from.lastItem);
+                  delete evt.from.lastItem;
+              }
+          }
+      });
+  });
+
+  // Initialize the rearrangeable library for automatic rearrangement
+  new Sortable(container, {
+      force: true,
+      acceptFrom: '.sortable-column',
+  });
+});

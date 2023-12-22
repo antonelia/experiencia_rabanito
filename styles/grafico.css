@@ -493,3 +493,28 @@ body.modal-open section{
   }
 
   
+  /*grid*/
+
+  .sortable-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sortable-column {
+    flex: 1;
+    margin: 5px 2.5px;
+}
+
+.sortable-item {
+    margin: 5px 2.5px;
+    cursor: grab;
+}
+
+.non-draggable-column {
+    flex: 1;
+    margin: 5px 2.5px;
+}
+
+.non-draggable-item {
+    margin: 5px 2.5px;
+}
